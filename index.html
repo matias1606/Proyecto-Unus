@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Unus catering ofrece servicios de catering,viandas y pasteleria. Nuestros productos son de primera calidad">
+    <meta name="keywords" content="CATERING, VIANDAS, PASTELERIA, SOCIAL, COORPORATIVO">
+    <link rel="shortcut icon" href="imgs/icono.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <title>Unus</title>
+</head>
+<body>
+  <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                      <img src="imgs/logo.jpeg" alt="" width="50" height="50">
+                    </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <div class="btn-group"><a class="nav-link active" href="index.html">Quienes somos
+                        <span class="sr-only">(current)</span>
+                      </a></div>
+                      
+                    </li>
+                    <li class="nav-item dropdown">
+                      <div class="btn-group">
+                      <a class="nav-link" href="catering.html">Catering</a>
+                      <button type="button" class="dropdown-toggle dropdown-toggle-split desplegable" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu collapse" aria-labelledyby="navbarDropdown">
+                        <a class="dropdown-item" onclick="window.location.href = 'catering.html#social';">Eventos sociales</a>
+                        <a class="dropdown-item" onclick="window.location.href = 'catering.html#coorporativo';">Eventos coorporativos</a>
+                        <a class="dropdown-item" onclick="window.location.href = 'catering.html#presup';">Presupuesto</a>
+                      </div>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <div class="btn-group">
+                      <a class="nav-link" href="viandas.html">Viandas</a>
+                      <button type="button" class="dropdown-toggle dropdown-toggle-split desplegable" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu collapse" aria-labelledyby="navbarDropdown">
+                        <a class="dropdown-item" onclick="window.location.href = 'viandas.html#tradicional';">Viandas Tradicionales</a>
+                        <a class="dropdown-item" onclick="window.location.href = 'viandas.html#saludable';">Viandas saludables</a>
+                        <a class="dropdown-item" onclick="window.location.href = 'viandas.html#pedido';">Pedidos</a>
+                      </div>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="freezeados.html">Productos freezeados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+          </nav>
+
+    <!-- MAIN DE QUIENES SOMOS -->
+    <div class="container mt-3">
+      <div class="row mt-3">
+        <div class="col mt-5">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1507757861675-f14524bb197d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=50" class="d-block img-fluid" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=50" class="d-block img-fluid" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1525265332434-d52e2314161d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=50" class="d-block img-fluid" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <h2> Quienes Somos</h2>
+          <div class="mb-3 sl">
+          </div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis tempora quibusdam sequi dolores nisi et aperiam voluptatibus amet repellendus voluptatum asperiores dolorum corporis, laudantium alias commodi a rerum qui ad!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, ut corrupti! Ut nobis aliquam repellendus velit suscipit consequuntur animi? Reprehenderit modi inventore consequuntur consequatur cum temporibus eaque aliquam animi facere?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quidem hic laborum exercitationem quae, praesentium id eius ullam possimus perferendis, distinctio ipsum ipsam, incidunt nesciunt? Deserunt enim saepe consectetur ducimus.
+          </p>
+        </div>
+        <div class="col-md-8">
+          <img src="imgs/catering1.jpeg" class="image-fit rounded" alt="">
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- FOOTER DE LA PAGINA -->
+    <footer class="container-fluid">
+      <div class="row">
+          <div class="col-md-4">
+            <p class="text-light descripcion"> Empresa de catering y productos freezeados </p>
+          </div>
+          <div class="col-md-4">
+            <p class="text-light derechos">Copyright© 2020 Unus Catering</p>
+          </div>
+          <div class="col-md-4">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-4">
+                        <a class="ml-3" href="index.html"> <img src="imgs/logo.jpeg" height="100" width="100" alt="logo"></a>
+                        <div class="row">
+                          <div class="col-md-4 ml-3">
+                            <img src="imgs/titulo-logo.png" height="40" width="100" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-8 mt-3">
+                        <div class="container rubros">
+                          <div class="row">
+                            <div class="col"><h2 class="rubro">CATERING PARA EVENTOS</h2></div>
+                          </div>
+                          <div class="row">
+                            <div class="col"><h2 class="rubro">VIANDAS SALUDABLES</h2></div>
+                          </div>
+                          <div class="row">
+                            <div class="col"><h2 class="rubro">PASTELERIA</h2></div>
+                          </div>
+                          <div class="row">
+                            <div class="col"><h2 class="rubro">VIANDAS ESCOLARES</h2></div>
+                          </div>  
+                        </div> 
+                        </div>
+                        <div class="container text-center mt-3">
+                          <div class="row">
+                            <div class="rounded-social-buttons col">
+                                <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                          </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="hl"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="telefono"><a href="#" id="share-wa" class="sharer button"><i class="fab fa-whatsapp icono"></i></a>
+                        +54 911 2931 3554</p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>       
+  </body>
+</html>
