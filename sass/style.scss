@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Quicksand:wght@300&family=Vollkorn:ital,wght@1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,600;0,700;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Vollkorn:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Open+Sans+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 $verde:rgb(183, 236, 83);
 $rosa: rgb(252, 154, 156);
 /* NAVBAR*/
@@ -45,14 +51,13 @@ $rosa: rgb(252, 154, 156);
 .dropdown-menu{
   background-color: black;
   .dropdown-item{
-    font-family: 'Michroma','serif';
+    font-family: 'Maven Pro', sans-serif;
     color: white;
-    font-size: 9px;
     text-decoration: none;
     color: rgba(255, 212, 159, 0.9) !important;
     text-decoration-style: solid;
     font-weight: lighter;
-    font-size: 11px;
+    font-size: 16px;
     text-shadow: 0.25px 0.5px 0.8px rgba(255, 212, 159, 0.9);
       &:hover {
         background-color: black;
@@ -60,12 +65,23 @@ $rosa: rgb(252, 154, 156);
         border-top: 2px solid #eb845b;
         border-bottom: 2px solid #eb845b;
         border-radius: 2px;
-        font-size: 12px;
+        font-size: 18px;
         transition: all 0.4s !important;
       }
   }
 }
-
+/*Estilo quienes somos*/
+.nosotros{
+  h2{
+    font-family: 'Oleo Script', cursive;
+    font-size: 35px;
+    letter-spacing: 2px;
+  }
+  p{
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  
+}
 /*Estilo Catering*/
 body{
     font-family: 'Quicksand','serif';
@@ -74,8 +90,7 @@ body{
   color: rgb(17, 2, 2)!important;
   text-align: center;
   h1{
-    font-family: 'Quicksand','serif';
-    font-weight: 400;
+    font-family: 'Lato', sans-serif;
   }
 }
 @mixin fondo_carrousel($r){
@@ -108,19 +123,20 @@ body{
       transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
     h2{
-        font-family: 'Quicksand';
+      font-family: 'Oleo Script', cursive;
         font-weight: 500;
     }
     p{
+      font-family: 'Open Sans Condensed', sans-serif;
         font-size: 20px;
     }
-    @include subrayado(rgba(255, 79, 9, 0.993),rgba(255, 79, 9, 0.993) ,85%);
+    @include subrayado(rgba(255, 79, 9, 0.993),rgba(255, 79, 9, 0.993) ,55%);
     .separacion{
         border: 4px solid rgb(247, 43, 104);
         border-radius: 10px;
     }
     .coorp{
-      @include subrayado(rgb(28, 60, 238),rgb(28, 60, 238) ,91%);
+      @include subrayado(rgb(28, 60, 238),rgb(28, 60, 238) ,74%);
     }
 }
 .presupuesto{
@@ -169,11 +185,14 @@ body{
     img{
       object-fit: cover;
     }
+    h3{
+      font-family: 'Open Sans Condensed', sans-serif;
+    }
     h2{
-      font-family: 'Vollkorn',serif;
-      font-weight:500;
+      font-family: 'Oleo Script', cursive;
     }
     p{
+      font-family: 'Open Sans Condensed', sans-serif;
       font-size: 19px;
       text-align: left;
       letter-spacing: 1.25px;
@@ -209,20 +228,25 @@ body{
   .pizzas{
     .container {
   position: relative;
-  width: 60%;
+  width: 50%;
   height: 70%;
-  margin-right: 90px;
+  margin-right: 130px;
+  div{
+    height: 350px;
+  }
 }
 .image {
   width: 250px;
-  height: 100%;
+  min-height: 350px;
+  object-fit: cover;
+  height: 100%  ;
 }
 
 .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 15px;
+  left: 0;
   right:0;
   height: 100%;
   width:250px;
@@ -343,13 +367,12 @@ body{
   }
 /* estilos de la nav */  
   .nav-link {
-    font-family: 'Michroma','serif';
-    font-size: 12px;
+    font-family: 'Maven Pro', sans-serif;
     text-decoration: none;
     color: rgba(255, 212, 159, 0.9) !important;
     text-decoration-style: solid;
     font-weight: lighter;
-    font-size: 11px;
+    font-size: 16px;
     text-shadow: 0.25px 0.5px 0.8px rgba(255, 212, 159, 0.9);
   
     &:hover {
@@ -357,7 +380,7 @@ body{
       border-top: 2px solid #eb845b;
       border-bottom: 2px solid #eb845b;
       border-radius: 2px;
-      font-size: 13px;
+      font-size: 18px;
       transition: all 0.4s !important;
     }
   }
@@ -744,4 +767,33 @@ img{
 	.footer_bottom p.text-right{
 		text-align: center!important;
 	}
+}
+.show > .dropdown-menu {
+  max-height: 900px;
+  visibility: visible;
+}
+
+.dropdown-menu {
+  display: block;
+  max-height: 0;
+  visibility: hidden;
+  transition: all ease .5s;
+  overflow: hidden;
+}
+.dropdown{
+  .dropdown-menu{
+    transition: all .7s;
+  }
+  .dropdown-toggle{
+    transition: all .7s;
+  }
+  .dropdown-toggle-split{
+    transition: all .7s;
+  }
+  .show{
+    transition: all .7s;
+  }
+}
+.desplegable{
+  transition: all .5s;
 }
